@@ -1,0 +1,34 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 250px auto;
+}
+
+.estrellas {
+    display: inline-flex;
+    position: relative;
+}
+
+input {
+    cursor: pointer;
+    opacity: 0;
+}
+
+label {
+    background-image: url("icon/estrella-vacia.png");
+    background-size: cover;
+    cursor: pointer;
+    display: inline-flex;
+    height: 40px;
+    width: 40px;
+}
+
+input:checked ~ label {
+    background-image: url("icon/estrella-llena.png");
+}
